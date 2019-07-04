@@ -10,6 +10,30 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var displayLbl: UILabel!
+    @IBAction func touchUppInsidee(_ sender: UIButton) {
+        
+        self.displayLbl.text = "touchUppInsidee"
+        
+        print("touchUppInsidee")
+    }
+    
+    @IBAction func toucuDragOutside(_ sender: UIButton) {
+        self.displayLbl.text = "toucuDragOutside"
+
+        
+        print("toucuDragOutside")
+
+        
+    }
+    
+    @IBAction func touchDraginside(_ sender: UIButton) {
+        self.displayLbl.text = "touchDraginside"
+
+        
+        print("touchDraginside")
+
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
